@@ -1,0 +1,51 @@
+[
+  {
+    "id": "basic",
+    "nameKey": "plan.basic.name",
+    "descKey": "plan.basic.desc",
+    "monthly": "500",
+    "quarterly": "1350",
+    "recommended": false,
+    "features": [
+      { "labelKey": "plan.feature.social", "valueKey": "plan.basic.social" },
+      { "labelKey": "plan.feature.ads", "valueKey": "plan.basic.ads" },
+      { "labelKey": "plan.feature.seo", "valueKey": "plan.basic.seo" },
+      { "labelKey": "plan.feature.web", "valueKey": "plan.basic.web" },
+      { "labelKey": "plan.feature.consulting", "valueKey": "plan.basic.consulting" },
+      { "labelKey": "plan.feature.reports", "valueKey": "plan.basic.reports" }
+    ]
+  },
+  {
+    "id": "pro",
+    "nameKey": "plan.pro.name",
+    "descKey": "plan.pro.desc",
+    "monthly": "1200",
+    "quarterly": "3240",
+    "recommended": true,
+    "features": [
+      { "labelKey": "plan.feature.social", "valueKey": "plan.pro.social" },
+      { "labelKey": "plan.feature.ads", "valueKey": "plan.pro.ads" },
+      { "labelKey": "plan.feature.seo", "valueKey": "plan.pro.seo" },
+      { "labelKey": "plan.feature.web", "valueKey": "plan.pro.web" },
+      { "labelKey": "plan.feature.consulting", "valueKey": "plan.pro.consulting" },
+      { "labelKey": "plan.feature.reports", "valueKey": "plan.pro.reports" }
+    ]
+  },
+  {
+    "id": "premium",
+    "nameKey": "plan.premium.name",
+    "descKey": "plan.premium.desc",
+    "monthly": "2500",
+    "quarterly": "6750",
+    "recommended": false,
+    "features": [
+      { "labelKey": "plan.feature.social", "valueKey": "plan.premium.social" },
+      { "labelKey": "plan.feature.ads", "valueKey": "plan.premium.ads" },
+      { "labelKey": "plan.feature.seo", "valueKey": "plan.premium.seo" },
+      { "labelKey": "plan.feature.web", "valueKey": "plan.premium.web" },
+      { "labelKey": "plan.feature.consulting", "valueKey": "plan.premium.consulting" },
+      { "labelKey": "plan.feature.reports", "valueKey": "plan.premium.reports" }
+    ]
+  }
+]
+

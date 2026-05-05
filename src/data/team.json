@@ -1,0 +1,21 @@
+[
+  {
+    "id": "jesus",
+    "nameKey": "team.jesus.name",
+    "roleKey": "team.jesus.role",
+    "bioKey": "team.jesus.bio"
+  },
+  {
+    "id": "ali",
+    "nameKey": "team.ali.name",
+    "roleKey": "team.ali.role",
+    "bioKey": "team.ali.bio"
+  },
+  {
+    "id": "isa",
+    "nameKey": "team.isa.name",
+    "roleKey": "team.isa.role",
+    "bioKey": "team.isa.bio"
+  }
+]
+

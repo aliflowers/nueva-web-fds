@@ -1,0 +1,75 @@
+[
+  {
+    "id": "strategy",
+    "titleKey": "service.strategy.title",
+    "descKey": "service.strategy.desc",
+    "bulletsKeys": [
+      "service.strategy.b1",
+      "service.strategy.b2",
+      "service.strategy.b3",
+      "service.strategy.b4"
+    ],
+    "ctaKey": "service.strategy.cta"
+  },
+  {
+    "id": "ads",
+    "titleKey": "service.ads.title",
+    "descKey": "service.ads.desc",
+    "bulletsKeys": [
+      "service.ads.b1",
+      "service.ads.b2",
+      "service.ads.b3",
+      "service.ads.b4"
+    ],
+    "ctaKey": "service.ads.cta"
+  },
+  {
+    "id": "design",
+    "titleKey": "service.design.title",
+    "descKey": "service.design.desc",
+    "bulletsKeys": [
+      "service.design.b1",
+      "service.design.b2",
+      "service.design.b3",
+      "service.design.b4"
+    ],
+    "ctaKey": "service.design.cta"
+  },
+  {
+    "id": "seo",
+    "titleKey": "service.seo.title",
+    "descKey": "service.seo.desc",
+    "bulletsKeys": [
+      "service.seo.b1",
+      "service.seo.b2",
+      "service.seo.b3",
+      "service.seo.b4"
+    ],
+    "ctaKey": "service.seo.cta"
+  },
+  {
+    "id": "social",
+    "titleKey": "service.social.title",
+    "descKey": "service.social.desc",
+    "bulletsKeys": [
+      "service.social.b1",
+      "service.social.b2",
+      "service.social.b3",
+      "service.social.b4"
+    ],
+    "ctaKey": "service.social.cta"
+  },
+  {
+    "id": "consulting",
+    "titleKey": "service.consulting.title",
+    "descKey": "service.consulting.desc",
+    "bulletsKeys": [
+      "service.consulting.b1",
+      "service.consulting.b2",
+      "service.consulting.b3",
+      "service.consulting.b4"
+    ],
+    "ctaKey": "service.consulting.cta"
+  }
+]
+
