@@ -6,7 +6,11 @@
   "nav.testimonials": "Testimonios",
   "nav.about": "Sobre nosotros",
   "nav.faq": "FAQ",
-  "nav.cta": "Solicitar propuesta",
+  "nav.cta": "Solicitar presupuesto",
+  "theme.light": "Claro",
+  "theme.dark": "Oscuro",
+  "theme.switchToLight": "Cambiar a modo claro",
+  "theme.switchToDark": "Cambiar a modo oscuro",
 
   "hero.kicker": "Agencia de marketing digital en Florida",
   "hero.title.line1": "Estrategia, creatividad",
@@ -253,3 +257,4 @@
   "paypal.modal.subtitle": "Este sitio funciona sin backend. La confirmación es solo visual.",
   "paypal.modal.cta": "Entendido"
 }
+

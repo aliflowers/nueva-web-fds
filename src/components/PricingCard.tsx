@@ -25,8 +25,8 @@ export function PricingCard({ nameKey, descKey, amount, periodLabel, recommended
   return (
     <div
       className={cn(
-        'relative overflow-hidden rounded-2xl bg-white/5 p-7 ring-1 ring-white/10',
-        recommended && 'bg-white/[0.07] ring-white/20 shadow-glow'
+        'relative overflow-hidden rounded-2xl bg-surface p-7 ring-1 ring-white/10',
+        recommended && 'bg-surface2 ring-white/20 shadow-glow'
       )}
     >
       {recommended ? (
@@ -46,7 +46,7 @@ export function PricingCard({ nameKey, descKey, amount, periodLabel, recommended
 
       <div className="mt-6 grid gap-2 text-sm">
         {features.map((f) => (
-          <div key={f.labelKey} className="flex items-start justify-between gap-4 rounded-xl bg-black/20 px-4 py-3 ring-1 ring-white/10">
+          <div key={f.labelKey} className="flex items-start justify-between gap-4 rounded-xl bg-bg/50 px-4 py-3 ring-1 ring-white/10">
             <div className="text-ink2">{t(f.labelKey)}</div>
             <div className="flex items-center gap-2 text-ink">
               {t(f.valueKey) === '✗' ? (

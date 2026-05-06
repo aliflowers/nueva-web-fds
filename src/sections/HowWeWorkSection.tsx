@@ -24,8 +24,8 @@ export function HowWeWorkSection() {
         <div className="mt-10 grid gap-4">
           {steps.map((s, idx) => (
             <MotionInView key={s.n} delay={idx * 0.06}>
-              <div className="relative overflow-hidden rounded-2xl bg-white/5 p-7 ring-1 ring-white/10">
-                <div className="absolute right-6 top-6 font-display text-5xl text-white/10">{s.n}</div>
+              <div className="relative overflow-hidden rounded-2xl bg-surface p-7 ring-1 ring-white/10">
+                <div className="absolute right-6 top-6 font-display text-5xl text-ink/20">{s.n}</div>
                 <div className="max-w-2xl">
                   <div className="font-display text-xl tracking-tight text-ink">{t(s.titleKey)}</div>
                   <div className="mt-2 text-sm leading-relaxed text-ink2">{t(s.descKey)}</div>

@@ -28,7 +28,7 @@ export function StatsCounter({ label, value }: { label: string; value: number })
   }, [inView, value])
 
   return (
-    <div ref={ref} className="rounded-2xl bg-white/5 p-7 ring-1 ring-white/10">
+    <div ref={ref} className="rounded-2xl bg-surface p-7 ring-1 ring-white/10">
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0.15, y: 8 }}

@@ -7,6 +7,10 @@
   "nav.about": "About",
   "nav.faq": "FAQ",
   "nav.cta": "Request a proposal",
+  "theme.light": "Light",
+  "theme.dark": "Dark",
+  "theme.switchToLight": "Switch to light mode",
+  "theme.switchToDark": "Switch to dark mode",
 
   "hero.kicker": "Florida-based digital marketing agency",
   "hero.title.line1": "Strategy, craft,",

@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
-:root {
+:root,
+html.dark {
   --bg: #0a0a0a;
+  --surface: #0f1115;
+  --surface2: #111827;
+  --ink: #ededed;
+  --ink2: #b8bcc6;
   --bg-soft: #101216;
   --bg-elevated: #141821;
   --accent-red: #b91c1c;
@@ -12,8 +17,35 @@
   --accent-violet: #8b5cf6;
 }
 
+html.light {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface2: #e2e8f0;
+  --ink: #0f172a;
+  --ink2: #334155;
+  --bg-soft: #f1f5f9;
+  --bg-elevated: #e2e8f0;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+a,
+button,
+[role='button'],
+summary,
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+  cursor: pointer;
+}
+
+button:disabled,
+input:disabled,
+textarea:disabled,
+select:disabled {
+  cursor: not-allowed;
 }
 
 body {
@@ -21,7 +53,14 @@ body {
     radial-gradient(1200px 600px at 8% -10%, rgba(185, 28, 28, 0.22), transparent 62%),
     radial-gradient(900px 500px at 92% 0%, rgba(59, 130, 246, 0.15), transparent 60%),
     var(--bg);
-  color: #ededed;
+  color: var(--ink);
+}
+
+html.light body {
+  background:
+    radial-gradient(1200px 600px at 8% -10%, rgba(185, 28, 28, 0.16), transparent 62%),
+    radial-gradient(900px 500px at 92% 0%, rgba(59, 130, 246, 0.1), transparent 60%),
+    var(--bg);
 }
 
 ::selection {
@@ -59,4 +98,72 @@ body {
 
 .section-neutral-elevated {
   background: linear-gradient(180deg, rgba(20, 24, 33, 0.8) 0%, rgba(10, 10, 10, 0.98) 100%);
+}
+
+html.light .section-red {
+  background: linear-gradient(180deg, rgba(185, 28, 28, 0.14) 0%, rgba(185, 28, 28, 0.05) 46%, rgba(255, 255, 255, 0) 100%);
+}
+
+html.light .section-cyan {
+  background:
+    radial-gradient(800px 380px at 88% 8%, rgba(34, 211, 238, 0.14), transparent 70%),
+    linear-gradient(180deg, rgba(248, 250, 252, 1) 0%, rgba(237, 242, 248, 0.98) 100%);
+}
+
+html.light .section-gold {
+  background:
+    radial-gradient(760px 360px at 12% 10%, rgba(245, 158, 11, 0.14), transparent 70%),
+    linear-gradient(180deg, rgba(248, 250, 252, 1) 0%, rgba(237, 242, 248, 0.98) 100%);
+}
+
+html.light .section-blue {
+  background:
+    radial-gradient(760px 360px at 80% 14%, rgba(59, 130, 246, 0.16), transparent 72%),
+    linear-gradient(180deg, rgba(248, 250, 252, 1) 0%, rgba(237, 242, 248, 0.98) 100%);
+}
+
+html.light .section-violet {
+  background:
+    radial-gradient(760px 360px at 16% 12%, rgba(139, 92, 246, 0.14), transparent 70%),
+    linear-gradient(180deg, rgba(248, 250, 252, 1) 0%, rgba(237, 242, 248, 0.98) 100%);
+}
+
+html.light .section-neutral-elevated {
+  background: linear-gradient(180deg, rgba(226, 232, 240, 0.95) 0%, rgba(248, 250, 252, 1) 100%);
+}
+
+html.light .border-white\/10 {
+  border-color: rgba(15, 23, 42, 0.18) !important;
+}
+
+html.light .ring-white\/10 {
+  --tw-ring-color: rgba(15, 23, 42, 0.16) !important;
+}
+
+html.light .ring-white\/20 {
+  --tw-ring-color: rgba(15, 23, 42, 0.28) !important;
+}
+
+html.light .bg-white\/5 {
+  background-color: rgba(15, 23, 42, 0.06) !important;
+}
+
+html.light .bg-white\/8 {
+  background-color: rgba(15, 23, 42, 0.09) !important;
+}
+
+html.light .bg-white\/10 {
+  background-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+html.light .text-white\/10 {
+  color: rgba(15, 23, 42, 0.2) !important;
+}
+
+html.light .hover\:text-white:hover {
+  color: var(--ink) !important;
+}
+
+html.light .text-white {
+  color: var(--ink) !important;
 }

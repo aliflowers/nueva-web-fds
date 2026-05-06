@@ -21,7 +21,7 @@ export function TestimonialCard({ quoteKey, name, role, country }: TestimonialCa
     .toUpperCase()
 
   return (
-    <div className="group rounded-2xl bg-white/5 p-7 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:bg-white/7 hover:ring-white/20">
+    <div className="group rounded-2xl bg-surface p-7 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:bg-surface2 hover:ring-white/20">
       <div className="flex items-center gap-1 text-brand-600">
         {Array.from({ length: 5 }).map((_, i) => (
           <Star key={i} size={14} fill="currentColor" />

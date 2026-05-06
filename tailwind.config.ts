@@ -5,11 +5,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: '#0A0A0A',
-        surface: '#0F1115',
-        surface2: '#111827',
-        ink: '#EDEDED',
-        ink2: '#B8BCC6',
+        bg: 'var(--bg)',
+        surface: 'var(--surface)',
+        surface2: 'var(--surface2)',
+        ink: 'var(--ink)',
+        ink2: 'var(--ink2)',
         brand: {
           50: '#FEF2F2',
           100: '#FEE2E2',
@@ -47,4 +47,3 @@ export default {
   },
   plugins: []
 } satisfies Config
-

@@ -5,22 +5,31 @@ import { Link2, PlayCircle, Share2, Users } from 'lucide-react'
 
 import { Container } from '@/components/ui/Container'
 import { useLanguage } from '@/hooks/useLanguage'
+import { useTheme } from '@/hooks/useTheme'
+import { cn } from '@/utils/cn'
 
 export function Footer() {
   const { t } = useLanguage()
+  const { theme } = useTheme()
+  const isLight = theme === 'light'
+  const logoSrc = isLight ? '/FDS%20transparente.png' : '/cropped-FDS-Transparente-2-3-300x190.webp'
+  const logoWrapClass = isLight ? 'w-[130px]' : 'w-[170px]'
+  const logoClass = cn('w-auto', isLight ? 'h-12' : 'h-14')
 
   return (
     <footer className="border-t border-white/10 bg-surface">
       <Container className="py-16">
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-5">
-            <Image
-              src="/cropped-FDS-Transparente-2-3-300x190.webp"
-              alt="Feng Digital Services"
-              width={188}
-              height={119}
-              className="h-14 w-auto"
-            />
+            <div className={cn('flex items-center', logoWrapClass)}>
+              <Image
+                src={logoSrc}
+                alt="Feng Digital Services"
+                width={188}
+                height={119}
+                className={logoClass}
+              />
+            </div>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-ink2">{t('footer.desc')}</p>
             <div className="mt-6 flex items-center gap-3">
               <a className="rounded-xl bg-white/5 p-2 text-ink2 ring-1 ring-white/10 hover:bg-white/8 hover:text-ink" href="#" aria-label="Instagram">

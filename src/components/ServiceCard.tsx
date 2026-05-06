@@ -27,7 +27,7 @@ export function ServiceCard({ id, index, titleKey, descKey, bulletsKeys, ctaKey 
   const imageSrc = imageByService[id] ?? '/estrategia_digital_fds.png'
 
   return (
-    <div className="group relative overflow-hidden rounded-2xl bg-white/5 p-7 ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:bg-white/7 hover:ring-white/20">
+    <div className="group relative overflow-hidden rounded-2xl bg-surface p-7 ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:bg-surface2 hover:ring-white/20">
       <div className="absolute -right-12 -top-14 h-40 w-40 rounded-full bg-brand-700/15 blur-2xl transition group-hover:bg-brand-700/25" />
       <div className="relative">
         <div className="mb-5 overflow-hidden rounded-xl ring-1 ring-white/10">
@@ -59,7 +59,7 @@ export function ServiceCard({ id, index, titleKey, descKey, bulletsKeys, ctaKey 
 
         <Link
           href={`/services/${id}`}
-          className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-ink transition group-hover:text-white"
+          className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-ink transition group-hover:text-brand-700"
         >
           {t(ctaKey)}
           <ArrowRight size={16} className="transition group-hover:translate-x-0.5" />

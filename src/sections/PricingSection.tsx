@@ -34,14 +34,14 @@ export function PricingSection() {
         <MotionInView>
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
             <SectionHeading title={t('pricing.title')} subtitle={t('pricing.subtitle')} />
-            <div className="flex items-center gap-2 rounded-2xl bg-white/5 p-2 ring-1 ring-white/10">
+            <div className="flex items-center gap-2 rounded-2xl bg-surface p-2 ring-1 ring-white/10">
               <button
                 type="button"
                 onClick={() => setPeriod('monthly')}
                 className={
                   period === 'monthly'
-                    ? 'rounded-xl bg-white/10 px-4 py-2 text-sm font-medium text-ink'
-                    : 'rounded-xl px-4 py-2 text-sm text-ink2 hover:bg-white/8 hover:text-ink'
+                    ? 'rounded-xl bg-surface2 px-4 py-2 text-sm font-medium text-ink'
+                    : 'rounded-xl px-4 py-2 text-sm text-ink2 hover:bg-surface2 hover:text-ink'
                 }
               >
                 {t('pricing.toggle.monthly')}
@@ -51,8 +51,8 @@ export function PricingSection() {
                 onClick={() => setPeriod('quarterly')}
                 className={
                   period === 'quarterly'
-                    ? 'rounded-xl bg-white/10 px-4 py-2 text-sm font-medium text-ink'
-                    : 'rounded-xl px-4 py-2 text-sm text-ink2 hover:bg-white/8 hover:text-ink'
+                    ? 'rounded-xl bg-surface2 px-4 py-2 text-sm font-medium text-ink'
+                    : 'rounded-xl px-4 py-2 text-sm text-ink2 hover:bg-surface2 hover:text-ink'
                 }
               >
                 {t('pricing.toggle.quarterly')}

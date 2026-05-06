@@ -16,12 +16,11 @@ export function Button({ className, variant = 'primary', size = 'md', ...props }
         size === 'md' && 'h-11 px-4 text-sm',
         size === 'lg' && 'h-12 px-5 text-base',
         variant === 'primary' && 'bg-brand-700 text-white hover:bg-brand-600 shadow-soft',
-        variant === 'secondary' && 'bg-white/5 text-ink ring-1 ring-white/10 hover:bg-white/8',
-        variant === 'ghost' && 'bg-transparent text-ink hover:bg-white/5',
+        variant === 'secondary' && 'bg-surface text-ink ring-1 ring-white/10 hover:bg-surface2',
+        variant === 'ghost' && 'bg-transparent text-ink hover:bg-surface',
         className
       )}
       {...props}
     />
   )
 }
-
