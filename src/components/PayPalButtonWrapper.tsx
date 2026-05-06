@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { PayPalButtons, PayPalScriptProvider, usePayPalScriptReducer } from '@paypal/react-paypal-js'
 import { useMemo, useState } from 'react'
 
@@ -120,7 +121,26 @@ export function PayPalButtonWrapper({ amount, planName }: PayPalButtonWrapperPro
   if (!clientId) {
     return (
       <div className="rounded-2xl bg-black/20 p-4 ring-1 ring-white/10">
-        <div className="text-sm text-ink">{t('pricing.paypal.missing')}</div>
+        <div className="mb-3 flex items-center justify-between gap-3">
+          <div className="text-xs font-medium tracking-[0.2em] text-ink2">PAYPAL</div>
+          <div className="text-xs text-ink2">{t('paypal.state.ready')}</div>
+        </div>
+        <a
+          href="https://www.sandbox.paypal.com/signin"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="inline-flex w-full items-center justify-center rounded-full bg-[#FFC439] px-4 py-3 text-sm font-semibold text-[#111111] transition hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC439] focus-visible:ring-offset-2 focus-visible:ring-offset-black/20"
+        >
+          <span className="mr-2">Pagar con</span>
+          <Image
+            src="/PayPal.png"
+            alt="PayPal"
+            width={120}
+            height={30}
+            className="h-5 w-auto object-contain"
+          />
+        </a>
+        <div className="mt-3 text-xs text-ink2">{t('pricing.paypal.sandboxNote')}</div>
       </div>
     )
   }

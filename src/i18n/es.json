@@ -104,6 +104,8 @@
   "pricing.pay": "Pagar con PayPal",
   "pricing.microcopy": "Cancela cuando quieras · Pago seguro",
   "pricing.paypal.missing": "Configura NEXT_PUBLIC_PAYPAL_CLIENT_ID para habilitar pagos.",
+  "pricing.paypal.sandboxCta": "Pagar con PayPal",
+  "pricing.paypal.sandboxNote": "Checkout temporal: abre el login de PayPal mientras configuramos el Client ID real.",
 
   "plan.basic.name": "Básico",
   "plan.basic.desc": "Base sólida para presencia y consistencia.",
@@ -257,4 +259,3 @@
   "paypal.modal.subtitle": "Este sitio funciona sin backend. La confirmación es solo visual.",
   "paypal.modal.cta": "Entendido"
 }
-

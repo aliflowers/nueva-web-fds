@@ -104,6 +104,8 @@
   "pricing.pay": "Pay with PayPal",
   "pricing.microcopy": "Cancel anytime · Secure payment",
   "pricing.paypal.missing": "Set NEXT_PUBLIC_PAYPAL_CLIENT_ID to enable payments.",
+  "pricing.paypal.sandboxCta": "Pay with PayPal",
+  "pricing.paypal.sandboxNote": "Temporary checkout: opens PayPal login while we configure the live Client ID.",
 
   "plan.basic.name": "Basic",
   "plan.basic.desc": "A solid foundation for presence and consistency.",
