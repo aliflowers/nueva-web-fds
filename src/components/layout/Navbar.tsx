@@ -76,8 +76,11 @@ export function Navbar() {
 
   const isLight = theme === 'light'
   const logoSrc = isLight ? '/FDS%20transparente.png' : '/cropped-FDS-Transparente-2-3-300x190.webp'
-  const logoWrapClass = isLight ? 'w-[96px] md:w-[130px]' : 'w-[112px] md:w-[170px]'
-  const logoClass = isLight ? 'h-11 w-auto md:h-12' : 'h-12 w-auto md:h-14'
+  const logoWrapClass = 'relative h-12 w-[112px] shrink-0 overflow-hidden md:h-14 md:w-[170px]'
+  const logoClass = cn(
+    'h-full w-full origin-left object-contain',
+    isLight ? 'scale-[1.45] md:scale-[1.4]' : 'scale-100'
+  )
   const headerButtonClass =
     isLight
       ? 'bg-ink text-bg ring-1 ring-ink/20 hover:bg-ink2 hover:text-bg'
@@ -98,7 +101,7 @@ export function Navbar() {
             e.preventDefault()
             scrollTo('top')
           }}
-          className={cn('flex shrink-0 items-center', logoWrapClass)}
+          className={cn('flex items-center', logoWrapClass)}
         >
           <Image
             src={logoSrc}

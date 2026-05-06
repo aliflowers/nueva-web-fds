@@ -13,8 +13,11 @@ export function Footer() {
   const { theme } = useTheme()
   const isLight = theme === 'light'
   const logoSrc = isLight ? '/FDS%20transparente.png' : '/cropped-FDS-Transparente-2-3-300x190.webp'
-  const logoWrapClass = isLight ? 'w-[130px]' : 'w-[170px]'
-  const logoClass = cn('w-auto', isLight ? 'h-12' : 'h-14')
+  const logoWrapClass = 'relative h-14 w-[170px] overflow-hidden'
+  const logoClass = cn(
+    'h-full w-full origin-left object-contain',
+    isLight ? 'scale-[1.4]' : 'scale-100'
+  )
 
   return (
     <footer className="border-t border-white/10 bg-surface">
