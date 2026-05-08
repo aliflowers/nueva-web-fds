@@ -65,6 +65,7 @@ export function Footer() {
                 <a href="/#about" className="hover:text-ink">{t('nav.about')}</a>
                 <a href="/#faq" className="hover:text-ink">{t('nav.faq')}</a>
                 <a href="/privacy-policy" className="hover:text-ink">{t('footer.privacy')}</a>
+                <a href="/user-agreement" className="hover:text-ink">{t('footer.terms')}</a>
               </div>
             </div>
             <div>
