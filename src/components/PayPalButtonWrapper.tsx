@@ -126,7 +126,7 @@ export function PayPalButtonWrapper({ amount, planName }: PayPalButtonWrapperPro
           <div className="text-xs text-ink2">{t('paypal.state.ready')}</div>
         </div>
         <a
-          href="https://www.sandbox.paypal.com/signin"
+          href="https://www.paypal.com/signin"
           target="_blank"
           rel="noreferrer noopener"
           className="inline-flex w-full items-center justify-center rounded-full bg-[#FFC439] px-4 py-3 text-sm font-semibold text-[#111111] transition hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC439] focus-visible:ring-offset-2 focus-visible:ring-offset-black/20"
@@ -140,7 +140,6 @@ export function PayPalButtonWrapper({ amount, planName }: PayPalButtonWrapperPro
             className="h-5 w-auto object-contain"
           />
         </a>
-        <div className="mt-3 text-xs text-ink2">{t('pricing.paypal.sandboxNote')}</div>
       </div>
     )
   }
