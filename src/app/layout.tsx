@@ -12,6 +12,11 @@ const fontDisplay = Syne({ subsets: ['latin'], variable: '--font-display' })
 export const metadata: Metadata = {
   title: 'Feng Digital Services',
   description: 'Premium digital marketing, design, SEO and paid media.',
+  icons: {
+    icon: '/cropped-FDS-Transparente-2-3-300x190.webp',
+    shortcut: '/cropped-FDS-Transparente-2-3-300x190.webp',
+    apple: '/cropped-FDS-Transparente-2-3-300x190.webp',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
